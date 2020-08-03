@@ -1,0 +1,21 @@
+.aboutInCont {
+	flex-direction: row;
+}
+
+.bio {
+	position: static;
+	overflow: hidden;
+	background: transparent;
+	max-width: 70%;
+	filter: none;
+	min-height: 110px;
+}
+
+@media only screen and (max-width: 900px) {
+	.aboutInCont {
+		flex-direction: column;
+	}
+	.bio {
+		max-width: 100%;
+	}
+}

@@ -1,0 +1,55 @@
+.RouteWrapper {
+	position: absolute;
+	top: 25px;
+	right: 5px;
+}
+
+.RouteWrapper :nth-child(1) {
+	width: 300px;
+	max-width: 80vw;
+}
+.RouteWrapper :nth-child(2) {
+	width: 230px;
+	max-width: 65vw;
+}
+.RouteWrapper :nth-child(3) {
+	width: 160px;
+	max-width: 50vw;
+}
+
+.link {
+	position: relative;
+	min-width: 100px;
+	height: 40px;
+	font-size: x-large;
+	background-color: white;
+	animation: linkAnim 1s;
+}
+
+.link::before {
+	position: absolute;
+	right: 100%;
+	top: 0;
+	content: '';
+	border-width: 20px;
+	border-style: solid;
+	border-color: white white transparent transparent;
+}
+
+@keyframes linkAnim {
+	from {
+		min-width: 0;
+		width: 0;
+		opacity: 0;
+	}
+	to {
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.RouteWrapper {
+		position: relative;
+		top: 25px;
+		right: 5px;
+	}
+}

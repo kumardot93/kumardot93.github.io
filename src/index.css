@@ -1,13 +1,76 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+		'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: black;
+	max-width: 100vw;
+	overflow-x: hidden;
+	perspective: 50px;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+	/* Styling for .md file for code section*/
+	color: rgb(20, 50, 50);
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+.content {
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0 0 10px white;
+	border-radius: 5px;
+	margin-bottom: 40px;
+	padding-bottom: 20px;
+	padding-top: 25px;
+}
+
+.animateOnShow {
+	opacity: 0;
+}
+
+.animateOnShowStart {
+	opacity: 1;
+	animation: slideUp 0.85s;
+}
+
+.TextAppearAnimation {
+	animation: appear 1s;
+}
+
+.roundBorder {
+	border-radius: 5px;
+}
+
+pre {
+	/* Styling for .md file for code section */
+	background-color: rgba(110, 140, 145, 0.2);
+	padding: 8px;
+	border-radius: 5px;
+	margin-left: 18px;
+	overflow: auto;
+}
+
+@keyframes slideUp {
+	from {
+		opacity: 0;
+		transform: translateY(50px) scaleY(1.2);
+	}
+	to {
+	}
+}
+
+@keyframes appear {
+	from {
+		opacity: 0;
+		font-size: 0;
+	}
+	to {
+	}
 }

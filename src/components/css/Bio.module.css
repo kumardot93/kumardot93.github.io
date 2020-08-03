@@ -1,0 +1,33 @@
+.Bio {
+	position: absolute;
+	top: 20px;
+	left: 30vw;
+	border-radius: 5px;
+	background-color: grey;
+	max-width: 320px;
+	filter: drop-shadow(1px 1px 2px white);
+}
+
+.Bio::before {
+	position: absolute;
+	border-width: 8px;
+	content: '';
+	top: 10px;
+	right: 100%;
+	border-style: solid;
+	border-color: transparent grey transparent transparent;
+}
+
+@media only screen and (max-width: 1200px) {
+	.Bio {
+		position: relative;
+		top: 0;
+		left: 0;
+		max-width: 100%;
+		background-color: transparent;
+		filter: none;
+	}
+	.Bio::before {
+		display: none;
+	}
+}
