@@ -16,7 +16,7 @@ function WorksMain() {
 			<div className="m-1 p-2 bg-secondary roundBorder animateOnShow">
 				<h3>{art.title}</h3>
 				<p className="ml-2">{art.description}</p>
-				<a href={`/article${art.article.substring(art.article.lastIndexOf('/'))}`} className="text-light">
+				<a href={`/article${art.article.substring(art.article.lastIndexOf('/'))}/`} className="text-light">
 					Read full article
 				</a>
 			</div>
